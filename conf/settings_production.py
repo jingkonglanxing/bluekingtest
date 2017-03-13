@@ -4,7 +4,7 @@
 """
 from settings import APP_ID
 import os
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # ===============================================================================
 # 数据库设置, 正式环境数据库设置

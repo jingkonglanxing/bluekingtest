@@ -2,6 +2,7 @@
 
 from common.mymako import render_mako_context
 from django.http import HttpResponse
+from django.shortcuts import render_to_response
 
 def index(request):
     return HttpResponse('ok')
@@ -30,4 +31,4 @@ def contactus(request):
 第一个app
 """
 def index(request):
-    return HttpResponse('Hello blueking')
+    return render_to_response('home_application/123.html')

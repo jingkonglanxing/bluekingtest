@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+    <!-- Bootstrap css -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css?v=1.0.1" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk_pack.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/bk/js/bk.js"></script>
+    <!-- 数据埋点统计 -->
+    <script src="https://magicbox.bkclouds.cc/static_api/analysis.js"></script>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]><script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/html5shiv.min.js"></script><script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/respond.min.js"></script><![endif]-->
+</head>
+
+<body class="bg-white" data-bg-color="bg-white">
+    <div class="king-page-box">
+        <div class="king-layout1-header">
+            <nav role="navigation" class="navbar navbar-default king-horizontal-nav3     f14">
+                <div class="nav-container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bk-example-navbar-collapse-3">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="javascript:;">
+                            <img src="https://magicbox.bkclouds.cc/static_api/v3/bk/images/logo.png" alt="" class="logo"> </a>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-responsive-collapse" id="bk-example-navbar-collapse-3">
+                        <ul class="nav navbar-nav ">
+                            <!--<li :class="{'bk-cur':item.active}"  v-for="item in renderData.items">-->
+                            <li class="bk-cur"> <a href="javascript:void(0);">首页<span></span></a> </li>
+                            <li class=""> <a href="javascript:void(0);">图标<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu" style="display: none;">
+                                    <li><a href="javascript:void(0);">线性图</a></li>
+                                    <li><a href="javascript:void(0);">饼状图</a></li>
+                                    <li><a href="javascript:void(0);">柱形图</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="javascript:void(0);">个人信息<span></span></a> </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="搜索..."> </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="javascript:;">
+                                    <img src="https://magicbox.bkclouds.cc/static_api/v3/components/horizontal_nav3/images/avatar.png" class="avatar">
+                                    <span>管理者 ( admin )</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="king-layout1-main clearfix">
+            <!-- sidebar start -->
+            <div class="king-layout1-sidebar" style="width:216px;">
+                <nav style="min-width: auto; z-index: 0;" class="king-vertical-nav5   ">
+                    <ul class="sidebar">
+                        <li class="sidebar-main"> <a href="javascript:;">                    首页 <span class="menu-icon glyphicon glyphicon-home"></span>                </a> </li>
+                        <li class="sidebar-title">
+                            <a style="color: #333">
+                                <span>综合分类</span>
+                            </a>
+                            <ul class="sidebar">
+                                <li class="sidebar-item active"> <a href="javascript:;">数据报表 <span class="menu-icon fa fa-gear"></span></a> </li>
+                                <li class="sidebar-item"> <a href="javascript:;">安全审计 <span class="menu-icon fa fa-wrench"></span></a> </li>
+                                <li class="sidebar-item"> <a href="javascript:;">单据事务 <span class="menu-icon fa fa-tasks"></span></a> </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-title">
+                            <a style="color: #333">
+                                <span>系统管理</span>
+                            </a>
+                            <ul class="sidebar">
+                                <li class="sidebar-item"> <a href="javascript:;">账户设置 <span class="menu-icon fa fa-ellipsis-h"></span></a> </li>
+                                <li class="sidebar-item"> <a href="javascript:;">密码修改 <span class="menu-icon fa fa-tasks"></span></a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- sidebar end -->
+            <!-- content start -->
+            <div class="king-content-wrap">
+                <div class="king-layout1-content" style="margin-left: 216px;">
+                    <form class="form-horizontal">
+                        <div style="height: 300px; position: relative;" id="chart_1489587799536" class="king-chart-box chart-pie  k-chart" data-role="chart"></div>
+                        <div class="form-group clearfix ">
+                            <label class="col-sm-3 control-label bk-lh30 pt0">参数：</label>
+                            <div class="col-sm-9">
+                                <select name="" id="" class="form-control bk-valign-top">
+                                    <option value="选择项1">下拉框</option>
+                                    <option value="bk" onclick="funcbk()">蓝鲸</option>
+                                    <option value="qqname">comk</option>
+                                    <option value="qq">980273331</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+    </div>
+    <script>
+        $(function(){
+            var li = $('.navbar-nav li');
+            li.each(function(){
+                $(this).click(function(){
+                    if( $(this).hasClass('opens') && $(this).find('ul li').length !=0){
+                        $(this).find('ul').slideUp(250);
+                        $(this).removeClass('opens');
+                    }else if($(this).find('ul li').length !=0){
+                        $(this).find('ul').slideDown(250);
+                        $(this).addClass('opens');
+                        $(this).siblings('li').removeClass('opens').find('ul').slideUp();
+                    }
+                });
+            });
+        })
+    </script>
+    <script>
+        // 创建图表
+        function createKendoPieChart(conf){
+            $(conf.selector).kendoChart({
+                title: {
+                    text: conf.data.title
+                },
+                legend: {
+                   position: "top"
+                },
+                theme : 'bootstrap',
+                seriesDefaults: {
+                    labels: {
+                        template: "#= category # - #= kendo.format('{0:P}', percentage)#",
+                        position: "outsideEnd",
+                        visible: true,
+                        background: "transparent"
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    data: conf.data.series
+                }],
+                tooltip: {
+                    visible: true,
+                    template: "#= category # - #= kendo.format('{0:P}', percentage) #"
+                }
+            });
+            $(window).resize(function(){
+                $(conf.selector).data("kendoChart").refresh();
+            });
+        }
+        
+        function initKendoPieChart(conf){
+            // 异步请求后台数据
+            $.ajax({
+                url: conf.url,
+                type: 'GET',
+                dataType: conf.dataType,
+                success: function(res){
+                    //获取数据成功
+                    if (res.result){
+                        var data = {
+                            series: res.data.series
+                        };
+                        createKendoPieChart({
+                            selector: conf.container, // 图表窗器
+                            data: data // 图表数据
+                        });
+                    } 
+                }
+            });
+        }
+    </script>
+    <script>
+        $(function(){
+            initKendoPieChart({
+                url: 'https://magicbox.bkclouds.cc/static_api/v3/components/charts_pie/demo.json',
+                dataType: 'json',
+                container: '#chart_1489587799536'
+            });
+        });
+    </script>
+    <script>
+        function funcbk() {
+            alert("Congratulations bk!")
+
+        }
+    </script>
+</body>
+
+</html>
